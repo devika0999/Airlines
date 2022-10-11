@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <app-navbar></app-navbar>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID </th>
+                                <th scope="col">NAME</th>
+                                <th scope="col">COUNTRY</th>
+                                <th scope="col">SLOGAN</th>
+                                <th scope="col">WEBSITE</th>
+                                <th scope="col">HEAD-QUARTERS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let i of passenger.data">
+
+                                
+                                <td>{{i.airline[0].id}}</td>
+                                <td>{{i.airline[0].name}}</td>
+                                <td>{{i.airline[0].country}}</td>
+                                <td>{{i.airline[0].slogan}}</td>
+                                <td>{{i.airline[0].website}}</td>
+                                <td>{{i.airline[0].head_quaters}}</td>
+                                  
+
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
