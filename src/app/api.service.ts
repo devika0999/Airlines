@@ -10,6 +10,11 @@ export class ApiService {
 
   viewAirlines=()=>{
     return this.http.get("https://api.instantwebtools.net/v1/airlines")
-  }
+
+    }
+    viewPassengers=()=>{
+      return this.http.get("https://api.instantwebtools.net/v1/passenger?page=0&size=30")
+  
+      }
 
 }
